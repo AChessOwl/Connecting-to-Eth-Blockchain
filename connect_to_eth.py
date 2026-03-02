@@ -43,18 +43,6 @@ def connect_with_middleware(contract_json):
 
 if __name__ == "__main__":
     connect_to_eth()
-
-    bnb_url = "https://bsc-dataseed.binance.org/"
-    w3 = Web3(HTTPProvider(bnb_url))
-
-    assert w3.is_connected(), f"Failed to connect to provider at {bnb_url}"
-
-    w3.middleware_onion.inject(ExtraDataToPOAMiddleware, layer=0)
-
-    contract = w3.eth.contract(
-        address=Web3.to_checksum_address(address),
-        abi=abi
-    )
   # TODO complete this method
 	# The first section will be the same as "connect_to_eth()" but with a BNB url
 	
