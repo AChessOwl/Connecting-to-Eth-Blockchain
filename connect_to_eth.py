@@ -28,12 +28,6 @@ def connect_with_middleware(contract_json):
         address=Web3.to_checksum_address(address),
         abi=abi
     )
-
-    print("Connected to BNB testnet")
-    print("Chain ID:", w3.eth.chain_id)
-    print("Latest block:", w3.eth.block_number)
-    print("Contract object created successfully")
-
     return w3, contract
 
 if __name__ == "__main__":
