@@ -43,6 +43,8 @@ def connect_with_middleware(contract_json):
 
 if __name__ == "__main__":
     connect_to_eth()
+	w3, contract = connect_with_middleware("contract_info.json")
+
   # TODO complete this method
 	# The first section will be the same as "connect_to_eth()" but with a BNB url
 	
