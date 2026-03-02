@@ -50,6 +50,3 @@ if __name__ == "__main__":
 	# create a contract object. Read more on the docs pages at https://web3py.readthedocs.io/en/stable/middleware.html
 	# and https://web3py.readthedocs.io/en/stable/web3.contract.html
 	
-    return w3, contract
-
-	
