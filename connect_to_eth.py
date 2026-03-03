@@ -3,6 +3,7 @@ from web3 import Web3
 from web3.middleware import ExtraDataToPOAMiddleware
 from web3.providers.rpc import HTTPProvider
 
+# Final Version
 def connect_to_eth():
     url = "https://mainnet.infura.io/v3/cd2e3fb42f964a2bb6b835731b72bd84"
     w3 = Web3(HTTPProvider(url))
